@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <title>Weather App :3</title>
+</head>
+<body>
+    <header>
+        <button id="theme-toggle">Dark Mode</button>
+    </header>
+
+    <h1>Welcome</h1>
+    <h3 class="local-time"></h3>
+
+    <main id="container">
+            <form class="form">
+
+                    <legend>Please select a city:</legend>
+                    <Label name="city"></Label>
+                    <input type="search" id="city" name="city" placeholder="Enter a city" required>
+
+                    <input type="radio" id="celsius" name="unit" value="metric" checked />
+                    <label for="celsius">Celsius</label>
+
+                    <input type="radio" id="fahrenheit" name="unit" value="us" />
+                    <label for="fahrenheit">Fahrenheit</label>
+
+                    <button type="submit" id="searchButton">Search</button>
+
+            </form>
+
+            <span class="temperature">
+
+            </span>
+    </main>
+
+    <script src="app.js"></script>
+    <footer>
+        <p>✨ Crafted with love by Pauli ✨</p>
+    </footer>
+</body>
+</html>
